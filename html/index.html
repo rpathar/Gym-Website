@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Goldy's Fitness</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#" onclick="toggleMenu();">About Us</a></li>
+            <li><a href="#" onclick="toggleMenu();">Contact Us</a></li>
+            <li><a href="#" onclick="toggleMenu();">Training</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">TGF logo</h2>
+            <div class="toggle" onclick="toggleMenu()";></div>
+        </header>
+        <video src="/img/180419_Boxing_13_10.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>The Goldy's Fitness</h2>
+            <h3>Never Give Up ... Be Stronger</h3>
+            <p>Goldy Bhauncha Fitness Club... Ekdum Zantamatick Website... Chala tr mg apan pn body banau goldy bhaun sarkhi.. 
+                "No Pain No Gain" - Goldy Bhau
+            </p>
+            <a href="#">Join us</a>
+
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="/img/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/instagram.png"></a></li>
+            <li><a href="#"><img src="/img/whatsapp.png" ></a></li>
+            <li><a href="#"><img src="/img/youtube.png" ></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
+            menuToggle.classList.toggle('active');
+            banner.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
